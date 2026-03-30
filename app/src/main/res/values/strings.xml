@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hay Baler Tracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">Hay Baler Tracker</string>
+    <string name="title_activity_bale_entry">Add Bale</string>
+    <string name="title_activity_bale_list">Bale List</string>
+</resources>
