@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaleTracker - Hay Bales Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌾 BaleTracker</h1>
+            <p>Manage your hay bales efficiently</p>
+        </header>
+        
+        <main>
+            <section class="stats">
+                <div class="stat-card">
+                    <h3>Total Bales</h3>
+                    <p id="total-bales">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Weight</h3>
+                    <p id="total-weight">0 kg</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Weight</h3>
+                    <p id="avg-weight">0 kg</p>
+                </div>
+            </section>
+            
+            <section class="add-bale">
+                <h2>Add New Bale</h2>
+                <form id="bale-form">
+                    <div class="form-group">
+                        <label for="bale-id">Bale ID:</label>
+                        <input type="text" id="bale-id" placeholder="e.g., BL001" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" id="weight" min="0.1" step="0.1" placeholder="e.g., 25.5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <button type="submit">Add Bale</button>
+                </form>
+            </section>
+            
+            <section class="bale-list">
+                <h2>Bale Inventory</h2>
+                <div class="table-responsive">
+                    <table id="bale-table">
+                        <thead>
+                            <tr>
+                                <th>Bale ID</th>
+                                <th>Weight (kg)</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Bale entries will be added here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 BaleTracker. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
