@@ -33,6 +33,7 @@ Thumbs.db
 # Database
 *.sqlite
 *.sqlite3
+baler_tracker.db
 
 # Coverage
 coverage/
@@ -41,3 +42,6 @@ coverage/
 # Testing
 *.test.js
 *.spec.js
+
+# npmrc
+.npmrc

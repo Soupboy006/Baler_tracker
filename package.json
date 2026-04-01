@@ -2,38 +2,21 @@
   "name": "baler-tracker",
   "version": "1.0.0",
   "description": "A comprehensive tracking and monitoring system for baling equipment operations",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "npm run build:frontend && npm run build:backend",
-    "build:frontend": "echo \"Building frontend...\"",
-    "build:backend": "echo \"Building backend...\"",
-    "test": "jest",
-    "dev:frontend": "echo \"Starting frontend dev server...\"",
-    "dev:backend": "nodemon server.js"
+    "test": "jest"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^7.5.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "helmet": "^7.0.0",
-    "morgan": "^1.10.0",
-    "socket.io": "^4.7.2",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2",
-    "validator": "^13.9.0",
-    "multer": "^1.4.5-lts.1",
-    "xlsx": "^0.18.5",
-    "chart.js": "^4.4.0"
+    "sqlite3": "^5.1.6",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1",
     "jest": "^29.6.1",
-    "supertest": "^6.3.3",
-    "eslint": "^8.47.0",
-    "prettier": "^3.0.2"
+    "supertest": "^6.3.3"
   },
   "keywords": [
     "baler",
